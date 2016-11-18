@@ -1,1 +1,0 @@
-# Strahov_Pavel
