@@ -14,7 +14,7 @@ int main()
 		Victory	
 	}event;
 
-	 int number=0,try=0,cout=0 ;
+	 int number=0,try=1,cout=0 ;
 	srand(time(NULL)); /*Function enables to generate random numbers within a predetermined
 					   range depending on the system time */
 	number = rand() % 100 + 1;//Determination of the range of pseudorandom numbers.
@@ -31,8 +31,8 @@ int main()
 			event = Less;
 		else event = Victory;
 			
-		switch (event)
-		{
+			switch (event)
+			{
 			case More: 		
 				printf("Many. Try less");
 				break;
@@ -46,7 +46,7 @@ int main()
 								printf("Victory!");
 								}
 								break;			
-		}
+			}
 		getch();
 		system("cls");
 		cout++; //The counter attempts
