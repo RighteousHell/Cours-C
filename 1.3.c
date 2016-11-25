@@ -9,7 +9,7 @@ For example:
 int main(void)
 {
 	const float PI = 3.14;
-	const int semicircle = 180;
+	const int SEMICIRCLE= 180;
 	float value;
 	char format;
 	printf("Enter the angle value in the format: number(D / R):\nFor example: 45.00D\nD - degrees, R - radians\n");
@@ -18,7 +18,7 @@ int main(void)
 		if (format == 'D' || format == 'd')
 		{
 			printf("You enter a value in degrees: %fD", value);
-			value = (value*PI) / semicircle;
+			value = (value*PI) / SEMICIRCLE;
 			printf("\nYour angle in radians: %fR", value);
 
 		}
@@ -26,7 +26,7 @@ int main(void)
 			if (format == 'R' || format == 'r')
 			{
 				printf("You enter a value in radians: %fR", value);
-				value = (value * semicircle) / PI;
+				value = (value * SEMICIRCLE) / PI;
 				printf("\nYour angle in degrees: %fD", value);
 			}
 	
