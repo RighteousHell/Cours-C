@@ -37,4 +37,8 @@ int main(void)
 
 
 	return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
