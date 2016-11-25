@@ -1,4 +1,10 @@
-
+/*
+Write a program that translates the angle of gradu-
+cos radians, and vice versa, depending on the character of input.
+For example:
+45.00D - means the number of degrees, and 45.00R - in radians. Data entry is performed by template
+% f%c
+*/
 #include <stdio.h>
 int main(void)
 {
