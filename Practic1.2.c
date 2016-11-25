@@ -1,11 +1,15 @@
+/*
+Write a program that asks for the current time in HH: MM: SS, and then outputs the greeting depending on
+specified time ("Good morning" Good morning ", etc.)
+*/
 #include <stdio.h>
 int main(void)
 {
-		struct Time
+		struct Time //Structure of the "time", created for convenience and clarity
 	{
 		int hours, minuts, secunds;
 	}time;
-	do
+	do // Cycle provides validation of input time
 	{
 		printf("Enter the current time in the format HH:MM:SS:\n");
 		printf("Hours:");
@@ -33,7 +37,7 @@ int main(void)
 				printf("Good evening!"); 
 			}
 			else printf("You are not on Earth!");
-	getch();
+	getch(); //The function expects input
 
 
 	return 0;
