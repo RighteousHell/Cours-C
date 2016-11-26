@@ -21,9 +21,7 @@ int main(void)
 			{
 				printf("*");
 			}
-			printf("\n");
-		
-				
+			printf("\n");		
 		strcout--;
 		momentlenght=momentlenght+2;
 	}
