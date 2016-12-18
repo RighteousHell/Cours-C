@@ -1,15 +1,20 @@
+
 #include <stdio.h>
-#define SIZE 120
+#define map_size 256
 int main()
 {
-	char str[SIZE];
-	int word_cout = 0;
-	printf("Enter your the string:\n");
+	int map[map_size] = { 0 };
+	char str[120];
+	printf("Enter the string:\n");
 	gets(str);
-	for (int i = 1; str[i] != '\0'; i++)
-		if (str[i] == ' ')
-			word_cout++;
-	printf("You entered %d words", word_cout + 1);
+	for (int i = 0; i < strlen(str); i++)
+		map[str[i]]++;
+	printf("Occurrence of characters in the string:\n");
+	for (int i = 1; i < map_size; i++)
+	{
+		if (map[i])
+			printf("'%c' -> %d\n", (char)i, map[i]);
+	}
 	getch();
 	return 0;
 }
