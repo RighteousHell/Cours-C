@@ -5,7 +5,11 @@
  struct TABLECELL {
 	char ch;
 	int frequency;
+<<<<<<< HEAD
 };
+=======
+		  };
+>>>>>>> origin/master
 
 void bubblesort(struct TABLECELL tc[], int size) {
 	for (int i = 0; i < size - 1; i++) {
@@ -71,4 +75,8 @@ int main() {
 	int end;
 	scanf("%d", &end);
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
