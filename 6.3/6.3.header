@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+typedef struct {
+	char *str;
+	char *end;
+	int size;
+}STRING;
+
+void convertToString(STRING *s, int n, int abit);
